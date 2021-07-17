@@ -9,7 +9,7 @@ from . import ALIVE_NAME, StartTime, catversion, get_readable_time, mention, rep
 DEFAULTUSER = ALIVE_NAME or "SurCat"
 CAT_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.CUSTOM_ALIVE_TEXT or "✮ MY BOT IS RUNNING SUCCESSFULLY ✮"
-EMOJI = Config.CUSTOM_ALIVE_EMOJI or "  ❣️ "
+EMOJI = Config.CUSTOM_ALIVE_EMOJI or " 🦋 "
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
@@ -28,7 +28,7 @@ async def amireallyalive(alive):
         cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
         cat_caption += f"**{EMOJI} Uptime :** `{uptime}\n`"
         cat_caption += f"**{EMOJI} Master:** {mention}\n\n"
-        cat_caption += "   **[❣️DEPLOY DANGER_CAT❣️]**(https://github.com/dangerbots/danger_cat) "
+        cat_caption += "   **[🦋DEPLOY DANGER_CAT🦋]**(https://github.com/tz-ash) "
         await alive.client.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
@@ -43,7 +43,7 @@ async def amireallyalive(alive):
             f"**{EMOJI} Python Version :** `{python_version()}\n`"
             f"**{EMOJI} Uptime :** `{uptime}\n`"
             f"**{EMOJI} Master:** {mention}\n\n"
-                          "   **[❣️DEPLOY DANGER_CAT❣️]**(https://github.com/dangerbots/danger_cat) ",
+                          "   **[🦋DEPLOY DANGER_CAT🦋]**(https://github.com/tz-ash) ",
           )
      
 
